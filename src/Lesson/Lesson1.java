@@ -11,11 +11,11 @@ public class Lesson1 {
         String namesSarah = "Sarah";
         int ageSarah = 30;
 
-        String[] names = {"Sarah" , "Sarah"};
+        String[] names = {"Sarah", "Sarah"};
         int[] ages = {13, 30};
 
-        for (int i =0; i < names.length; i++) {
-            System.out.println("Имя - " + names[i] + " Возраст - " + ages [i]);
+        for (int i = 0; i < names.length; i++) {
+            System.out.println("Имя - " + names[i] + " Возраст - " + ages[i]);
         }
         Person sarah = new Person("Sarah", 30);
         System.out.println("sarah.name = " + sarah.getName());
@@ -26,5 +26,6 @@ public class Lesson1 {
 
 
     }
+
 }
 

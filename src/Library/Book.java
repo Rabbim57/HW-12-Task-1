@@ -37,7 +37,9 @@ public class Book {
         } else {
             return false;
         }
+        public int hashCode() {
+            return 21 * this.bookAuthor.hashCode() + 21 * this.bookName.hashCode() + 21 * this.bookYear;
 
-
+        }
     }
 }

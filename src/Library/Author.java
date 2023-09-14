@@ -25,4 +25,8 @@ public class Author {
         return this.authorName.equals(author.authorName) && this.authorSurname.equals(author.authorSurname);
 
     }
+
+    public int hashCode(){
+        return 20 * this.authorName.hashCode() + 20 * this.authorSurname.hashCode();
+    }
 }
