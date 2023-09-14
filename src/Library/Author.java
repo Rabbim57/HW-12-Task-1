@@ -23,5 +23,6 @@ public class Author {
 
     public boolean equals(Author author) {
         return this.authorName.equals(author.authorName) && this.authorSurname.equals(author.authorSurname);
+
     }
 }

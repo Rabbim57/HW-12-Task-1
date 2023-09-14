@@ -24,6 +24,7 @@ public class Lesson1 {
         System.out.println("sarah.getAge() = " + sarah.getAge());
         Person jonh = new Person("jonh", 13);
 
+
     }
 }
 
