@@ -21,5 +21,6 @@ public class Main {
         System.out.println(heavySands.hashCode());
         System.out.println(fatherChildren.hashCode());
 
+
     }
 }
