@@ -23,7 +23,7 @@ public class Person {
     public void increaseAge(int increment) {
 
         if (increment < 0) {
-            throw new IllegalAccessException("Инкремент не может быть отрицательным");
+            throw new IllegalStateException("Инкремент не может быть отрицательным");
         }
         this.age = age + increment;
 
@@ -33,4 +33,6 @@ public class Person {
     }
 
 
+    public void setAge(int i) {
+    }
 }

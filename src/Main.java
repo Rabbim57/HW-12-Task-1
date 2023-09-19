@@ -16,6 +16,8 @@ public class Main {
         }else{
             System.out.println("Книги разные");
         }
+
+
         System.out.println(heavySands.hashCode());
         System.out.println(fatherChildren.hashCode());
 
