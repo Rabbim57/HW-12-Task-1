@@ -1,32 +1,45 @@
 package Library;
 
+import java.util.Objects;
+
 public class Author {
     private String authorName;
     private String authorSurname;
 
-    public Author(String name, String surname) {
-        this.authorName = name;
-        this.authorSurname = surname;
+    public Author(String authorName, String authorSurname) {
+        this.authorName = authorName;
+        this.authorSurname = authorSurname;
     }
 
     public String getAuthorName() {
-        return this.authorName;
+        return authorName;
     }
 
     public String getAuthorSurname() {
-        return this.authorSurname;
+        return authorSurname;
     }
 
+    @Override
     public String toString() {
-        return this.authorName + " " + this.authorSurname;
+        return "Author{" +
+                "authorName='" + authorName + '\'' +
+                ", authorSurname='" + authorSurname + '\'' +
+                '}';
     }
 
-    public boolean equals(Author author) {
-        return this.authorName.equals(author.authorName) && this.authorSurname.equals(author.authorSurname);
-
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(authorName, author.authorName) && Objects.equals(authorSurname, author.authorSurname);
     }
 
-    public int hashCode(){
-        return 20 * this.authorName.hashCode() + 20 * this.authorSurname.hashCode();
+    @Override
+    public int hashCode() {
+        return Objects.hash(authorName, authorSurname);
     }
+
+
 }
+
